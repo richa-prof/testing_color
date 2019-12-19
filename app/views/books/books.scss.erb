@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+$highlight-color: <%= Book&.first&.highlight_color.presence || '#000776' %>;
+
 .title{
-  color: #000776;
+  color: $highlight-color;
 }

@@ -5,10 +5,10 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = Book.all
-    # if Book.first.present?
-    #   @store_stylesheet = PlanStylesheet.new(Book.first)
-    #   @store_stylesheet.compile
-    # end
+    if Book.first.present?
+      @store_stylesheet = PlanStylesheet.new(Book.first)
+      @store_stylesheet.compile
+    end
   end
 
 
