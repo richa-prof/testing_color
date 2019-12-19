@@ -208,6 +208,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 6.0.0.rc1)
+  rake
   sass-rails (~> 5)
   selenium-webdriver
   spring
