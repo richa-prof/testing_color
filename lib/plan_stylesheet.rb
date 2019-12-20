@@ -17,7 +17,11 @@ class PlanStylesheet
   end
 
   def sass_file_path
-    Rails.root.join('public', 'assets', "#{self.stylesheet_file}.scss")
+    if Rails.env.development?
+      Rails.root.join('app', 'assets', 'stylesheets', "#{self.stylesheet_file}.scss")
+    else
+      Rails.root.join('assets', 'stylesheets', "#{self.stylesheet_file}.scss")
+    end  
   end
 
   def styles

@@ -1,4 +1,5 @@
-<%= stylesheet_link_tag @store_stylesheet.stylesheet_file %>
+
+<%= stylesheet_link_tag @store_stylesheet.stylesheet_file rescue "" %>
 <p id="notice"><%= notice %></p>
 
 <h1>Books</h1>
